@@ -36,3 +36,29 @@ The following block diagram illustrates the components defined in `sketch.js`:
 
 ![snake game block diagram](./docs/snake_game_block_diagram.png)
 
+
+## Publishing Your Own Changes to This Project
+
+In order to publish changes that you make to this project, you should fork this repository and push changes to that fork.
+
+Here are the steps, in order:
+1. Fork this repo by following the instructions in the [GitHub documentation on forks](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+2. Clone the forked repository. Make sure to clone the URL for SSH authentication!
+
+```
+$ cd ~
+$ git clone git@github.com:<your forked repo>
+$ cd ~/demo-p5js
+```
+
+3. Make any changes to the files in your cloned repository.
+4. Commit and push to your cloned repository
+
+```
+$ cd ~/demo-p5js
+$ git add <files you edited>
+$ git commit -m "helpful commit message!"
+$ git push origin main
+```
+
+5. The pushed changes should be visible on GitHub. If you cloned the repository with HTTPS instead of SSH, you will get an authentication error when trying to push. To convert the remote URL to SSH, follow [this GitHub tutorial on managing remote repositories](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https)
