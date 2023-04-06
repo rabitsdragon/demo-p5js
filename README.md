@@ -61,4 +61,8 @@ $ git commit -m "helpful commit message!"
 $ git push origin main
 ```
 
-5. The pushed changes should be visible on GitHub. If you cloned the repository with HTTPS instead of SSH, you will get an authentication error when trying to push. To convert the remote URL to SSH, follow [this GitHub tutorial on managing remote repositories](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https)
+5. The pushed changes should be visible on GitHub!
+
+If you cloned the repository with HTTPS instead of SSH, you will get an authentication error when trying to push.
+To convert the remote URL to SSH, follow [this GitHub tutorial on managing remote repositories](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https).
+If you haven't yet configured an SSH key for your GitHub account, you should follow [this GitHub tutorial on adding SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
