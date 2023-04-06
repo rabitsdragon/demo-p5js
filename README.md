@@ -12,4 +12,27 @@ Technical details for the interactive systems are available on the [course websi
 Clone this repository and open `index.html` in a web browser.
 Note that you must be connected to the Yale network.
 
-The default host is `cpsc484-01.yale.internal:8888`, which you can modify in `sketch.js`
+To quickly view the game responding to actual data, start the [recorder utility](https://github.com/Yale-CPSC484-HCI/recorder) in play mode:
+
+```
+$ cd ~/recorder
+$ pipenv run python src/main.py --data-path data/sample2 --mode play
+```
+
+The default host is `localhost:4444`, which you can modify in `sketch.js`
+
+
+## System Overview
+
+Three files in this repository define the project's structure:
+
++ `index.html`: defines the elements of the webpage (excluding the dynamic game elements, which are defined in `sketch.js`).
++ `style.css`: defines the style properties of the elements of the webpage.
++ `sketch.js`: defines the game interaction and websocket connection.
+
+Most of the components that actually implement the game are defined in `sketch.js`.
+At a high level, the components defined therein open a websocket to one of the HCI displays, process body tracking data from the Kinect sensor to obtain a command, send that command to the game, and update the game objects and game score.
+The following block diagram illustrates the components defined in `sketch.js`:
+
+![snake game block diagram](./docs/snake_game_block_diagram.png)
+
