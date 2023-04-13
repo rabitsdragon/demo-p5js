@@ -16,12 +16,34 @@
 			font-size: 4rem;
 			margin-top: 3rem;
 		}
-		p {
-			font-size: 1.5rem;
-			margin-top: 1.5rem;
+        .container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100%;
 		}
-
-		help {
+		
+		button {
+			padding: 20px 30px;
+			font-size: 50px;
+			background-color: #0077cc;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+        }
+		
+		.left-btn {
+			order: 1;
+			margin-right: 50px;
+		}
+		
+		.right-btn {
+			order: 3;
+			margin-left: 50px;
+		}
+        help {
 			font-size: 2rem;
 			padding: 1rem 2rem;
 			background-color: #FF0000;
@@ -38,7 +60,10 @@
 </head>
 <body>
 	<h1>Charades</h1>
-	<p>To play this game of charades, you have the choice to record a movement or to guess a movement. Click back to return to the welcome page. Have fun!</p>
-	<help>Back</help>
+    <div class="container">
+		<button class="left-btn">Record a movement!</button>
+		<button class="right-btn">Guess a movement!</button>
+	</div>
+	<help>Help</help>
 </body>
 </html>
